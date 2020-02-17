@@ -1,0 +1,47 @@
+C:\DATA\Apps\git\repository-data-sura\Apps\1\Java\proyectos_sura\proyecto-jira\codigo\services\jira-independiente-service\target\jira-independiente-service\WEB-INF\classes\pe\com\integra\jira\independiente\application\internal\
+
+
+navarro.rivera.samuel@gmail.com
+
+C:\DATA\Apps\git\repository-data-sura\Apps\1\Java\proyectos_sura\proyecto-jira\codigo\services\jira-independiente-service\target\jira-independiente-service\WEB-INF\classes\pe\com\integra\jira\independiente\application\internal
+
+
+https://www.serverless360.com/blog/azure-blob-storage-vs-file-storage
+
+
+----------------------------------------
+
+Azure File Storage
+
+File Storage can be used if your business use case needs to deal mostly with standard File extensions like *.docx, *.png and *.bak then you should probably go with this storage option.
+
+The following points describe the use case scenarios: 
+
+Replace or supplement on-premises File servers
+“Lift and shift” applications
+Simplify cloud development
+
+
+https://storagenavarro.file.core.windows.net/fileservernavarro
+
+fileservernavarro
+
+
+Ejecute esto de powersherl
+
+$connectTestResult = Test-NetConnection -ComputerName storagenavarro.file.core.windows.net -Port 445
+if ($connectTestResult.TcpTestSucceeded) {
+    # Guardar la contraseña para que la unidad persista al reiniciar
+    cmd.exe /C "cmdkey /add:`"storagenavarro.file.core.windows.net`" /user:`"Azure\storagenavarro`" /pass:`"sz7ewSbmF7+K8KkQZdYNsiiGeG9b8s1EDc+QFLyItJXjJmx0rxho0yb6wBK/jyXI7SgczB/5rTxRX1us6Os7mw==`""
+    # Montar la unidad
+    New-PSDrive -Name Z -PSProvider FileSystem -Root "\\storagenavarro.file.core.windows.net\fileservernavarro"-Persist
+} else {
+    Write-Error -Message "Unable to reach the Azure storage account via port 445. Check to make sure your organization or ISP is not blocking port 445, or use Azure P2S VPN, Azure S2S VPN, or Express Route to tunnel SMB traffic over a different port."
+}
+
+
+https://github.com/Azure/azure-storage-python/
+
+
+
+
