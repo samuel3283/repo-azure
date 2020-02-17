@@ -43,5 +43,11 @@ if ($connectTestResult.TcpTestSucceeded) {
 https://github.com/Azure/azure-storage-python/
 
 
+Para GitPython
+
+https://github.com/gitpython-developers/GitPython
+
+python setup.py install
+
 
 
